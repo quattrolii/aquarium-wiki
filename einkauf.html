@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Einkaufsliste – Aquarium-Wiki</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html">Übersicht</a>
+  <a href="start.html">Start &amp; Zeitplan</a>
+  <a href="besatz-aktuell.html">Aktueller Besatz</a>
+  <a href="besatz-geplant.html">Geplanter Besatz</a>
+  <a href="wasserchemie.html">Wasserchemie</a>
+  <a href="technik.html">Technik</a>
+  <a href="einkauf.html">Einkaufsliste</a>
+</nav>
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Einkaufsliste</div>
+    <h1>Was für den Start fehlt</h1>
+    <p class="muted" style="margin:0;max-width:60ch">Nach Kategorie, mit Preis, günstigster gefundener Quelle und Status. „Treffer"/„ungeprüft" = Preis nicht direkt auf der Shopseite bestätigt, vor dem Kauf gegenprüfen.</p>
+  </div>
+
+  <div class="card">
+    <div class="section-head"><h2>Fortschritt</h2><span class="muted" data-progress style="font-size:.82rem"></span></div>
+    <div class="progress-track"><div class="progress-fill" data-progressbar></div></div>
+  </div>
+
+  <div class="card" id="shopList">
+    <div class="cat">
+      <div class="cat-title">Salz<span class="line"></span></div>
+      <label class="item" data-id="s1"><input type="checkbox" data-id="s1"><span class="body"><span class="label">Fauna Marin Professional Sea Salt, 3× 25 kg</span><span class="meta"><span class="price">276,30 €</span><a href="https://reefdepot.de/fauna-marin/2123-meerwasser-aquaristik-fauna-marin-professional-sea-salt-25kg-4260119457584.html" target="_blank" rel="noopener">reefdepot.de</a><span class="tag">geprüft, Versand frei, inkl. Gratis-ICP</span></span></span></label>
+    </div>
+
+    <div class="cat">
+      <div class="cat-title">Startbakterien<span class="line"></span></div>
+      <label class="item" data-id="s2"><input type="checkbox" data-id="s2"><span class="body"><span class="label">Fauna Marin Reef Start Pro Bac, 500 ml + 250 ml</span><span class="meta"><span class="price">95,81 €</span><a href="https://coralprime.de/products/fauna-marin-reef-start-pro-bac" target="_blank" rel="noopener">CoralPrime</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s3"><input type="checkbox" data-id="s3"><span class="body"><span class="label">Tropic Marin EcoStart Reef, 250 ml</span><span class="meta"><span class="price">20,99 €</span><a href="https://www.zooroyal.de/p/tropic-marin-ecostart-reef-250-ml/1000112582/" target="_blank" rel="noopener">ZooRoyal</a><span class="tag unsicher">Treffer</span></span></span></label>
+      <label class="item" data-id="s4"><input type="checkbox" data-id="s4"><span class="body"><span class="label">Tropic Marin Phos-Start, 75 g</span><span class="meta"><span class="price">15,95 €</span><a href="https://www.shop-meeresaquaristik.de/Futter-und-Zubehoer/Korallenfutter/Tropic-Marin/Tropic-Marin-Phos-Start-75-g-24462::40200.html" target="_blank" rel="noopener">Mrutzek</a><span class="tag unsicher">Treffer</span></span></span></label>
+      <label class="item" data-id="s5"><input type="checkbox" data-id="s5"><span class="body"><span class="label">Ammoniumchlorid, 250 g</span><span class="meta"><span class="price">8,27 €</span><a href="https://www.conatex.com/zentralabitur-kmk-konform/chemie-abitur-materialliste/chemikalien/ammoniumchlorid-250-g.html" target="_blank" rel="noopener">Conatex</a><span class="tag unsicher">Privatverkauf ungeprüft</span></span></span></label>
+    </div>
+
+    <div class="cat">
+      <div class="cat-title">Mastertronic-Reagenzien (Bündel bei reefdepot + megazoo)<span class="line"></span></div>
+      <label class="item" data-id="s6"><input type="checkbox" data-id="s6"><span class="body"><span class="label">Red Sea KH/Alkalinity Pro Set (2× einplanen)</span><span class="meta"><span class="price">30,95 €/Set</span><a href="https://reefdepot.de/red-sea/1105-alkalinitaet-pro-testkit-red-sea-7290100772058.html" target="_blank" rel="noopener">reefdepot.de</a><span class="tag unsicher">Lagerstatus ungeprüft</span></span></span></label>
+      <label class="item" data-id="s7"><input type="checkbox" data-id="s7"><span class="body"><span class="label">Tropic Marin NO2/NO3 Pro Set + 2× Refill (3× Bedarf)</span><span class="meta"><span class="price">26,96 € + 2× 17,06 € = 61,08 €</span><a href="https://reefdepot.de/tropic-marin/2751-tropic-marin-no2-no3-pro-test-0619106283608.html" target="_blank" rel="noopener">reefdepot.de</a><span class="tag unsicher">Lagerstatus ungeprüft</span></span></span></label>
+      <label class="item" data-id="s8"><input type="checkbox" data-id="s8"><span class="body"><span class="label">Red Sea Phosphate Pro (0–0,2 ppm)</span><span class="meta"><span class="price">35,95 €</span><a href="https://reefdepot.de/red-sea/1112-phosphat-pro-testkit-red-sea-7290100772089.html" target="_blank" rel="noopener">reefdepot.de</a><span class="tag unsicher">Lagerstatus ungeprüft</span></span></span></label>
+      <label class="item" data-id="s9"><input type="checkbox" data-id="s9"><span class="body"><span class="label">API Calcium Test (Meerwasser), 2×</span><span class="meta"><span class="price">2× 16,12 € = 32,24 € + Versand</span><a href="https://reef-aquarium-store.com/api-liquid-calcium-test-kit" target="_blank" rel="noopener">reef-aquarium-store.com</a><span class="tag">geprüft, in stock</span></span></span></label>
+      <label class="item" data-id="s10"><input type="checkbox" data-id="s10"><span class="body"><span class="label">Red Sea Magnesium Pro Set</span><span class="meta"><span class="price">29,95 €</span><a href="https://reefdepot.de/red-sea/1110-magnesium-pro-testkit-red-sea-7290100772065.html" target="_blank" rel="noopener">reefdepot.de</a><span class="tag unsicher">Lagerstatus ungeprüft</span></span></span></label>
+      <label class="item" data-id="s11"><input type="checkbox" data-id="s11"><span class="body"><span class="label">JBL ProAquaTest NH4 Set + Refill (2× Bedarf)</span><span class="meta"><span class="price">11,99 € + 6,99 € = 18,98 €</span><a href="https://www.megazoo-shop.de/PROAQUATEST-NH4-Ammonium" target="_blank" rel="noopener">megazoo-shop.de</a><span class="tag">geprüft, sofort verfügbar</span></span></span></label>
+    </div>
+
+    <div class="cat">
+      <div class="cat-title">Mastertronic/Dosetronic – Verschleiß<span class="line"></span></div>
+      <label class="item" data-id="s12"><input type="checkbox" data-id="s12"><span class="body"><span class="label">Dosetronic Innenschlauch-Set, 5 Stück</span><span class="meta"><span class="price">36,25 € + Versand</span><a href="https://www.dreamcorals.eu/en/detail/3243130/dosetronic-pump-inner-hose-replacement-pack-5-pcs.htm" target="_blank" rel="noopener">dreamcorals.eu</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s13"><input type="checkbox" data-id="s13"><span class="body"><span class="label">Mastertronic Pumpenschlauch A/B/C, 3×</span><span class="meta"><span class="price">7,20 €/St.</span><a href="https://www.dreamcorals.eu/en/detail/3138008/mastertronic-pump-abc-inner-hose.htm" target="_blank" rel="noopener">dreamcorals.eu</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s14"><input type="checkbox" data-id="s14"><span class="body"><span class="label">Externer Silikonschlauch 3,2 mm, 3 m (Meterware lohnt nicht, siehe Technik-Notiz)</span><span class="meta"><span class="price">12,73 €</span><a href="https://www.dreamcorals.eu/en/detail/3135728/high-quality-silicone-hose-3-2-mm-3-meters.htm" target="_blank" rel="noopener">dreamcorals.eu</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s15"><input type="checkbox" data-id="s15"><span class="body"><span class="label">Spritze-und-Nadel-Bundle Mastertronic</span><span class="meta"><span class="price">11,51 €</span><a href="https://www.dreamcorals.eu/en/detail/3137754/syringe-needle-bundle-4-6-for-mastertronic.htm" target="_blank" rel="noopener">dreamcorals.eu</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s16"><input type="checkbox" data-id="s16"><span class="body"><span class="label">Salzsäure 0,1 mol/l, 1 l (nur Reaktionskammer-Entkalkung)</span><span class="meta"><span class="price">6,70 € netto + Versand</span><a href="https://klueverundschulz.de/Salzsaeure-0-1-mol-L/882319534" target="_blank" rel="noopener">Klüver &amp; Schulz</a><span class="tag unsicher">Privatverkauf ungeprüft</span></span></span></label>
+    </div>
+
+    <div class="cat">
+      <div class="cat-title">Fauna Marin Balling Light &amp; ICP<span class="line"></span></div>
+      <label class="item" data-id="s17"><input type="checkbox" data-id="s17"><span class="body"><span class="label">Balling Light Set (Starter)</span><span class="meta"><span class="price">89,00 €</span><a href="https://www.planktonplus.de/aktion-fauna-marin-balling-light-set-komplettes-starter-set/FMBASETL" target="_blank" rel="noopener">PlanktonPlus</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s18"><input type="checkbox" data-id="s18"><span class="body"><span class="label">Reef ICP Total, 6er-Set</span><span class="meta"><span class="price">187,00 €</span><a href="https://www.planktonplus.de/fauna-marin-reef-icp-test-total-6er-set/2822" target="_blank" rel="noopener">PlanktonPlus</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s19"><input type="checkbox" data-id="s19"><span class="body"><span class="label">AquaHomeTest KH (Gegenprobe)</span><span class="meta"><span class="price">26,10 €</span><a href="https://www.planktonplus.de/fauna-marin-aquahometest-kh-alkalinitaet-test-fuer-meerwasseraquarien/FMTESTKH" target="_blank" rel="noopener">PlanktonPlus</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s20"><input type="checkbox" data-id="s20"><span class="body"><span class="label">Salifert 3er-Sparpaket KH/Ca/Mg</span><span class="meta"><span class="price">36,90 €</span><a href="https://www.planktonplus.de/salifert-test-3er-sparpaket-kh-ca-mg/ZWT003" target="_blank" rel="noopener">PlanktonPlus</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s21"><input type="checkbox" data-id="s21"><span class="body"><span class="label">Salifert NH3 Ammonium</span><span class="meta"><span class="price">10,20 €</span><a href="https://www.planktonplus.de/salifert-profi-test-nh3-ammonium/ZWT013" target="_blank" rel="noopener">PlanktonPlus</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s22"><input type="checkbox" data-id="s22"><span class="body"><span class="label">Salifert NO2 Nitrit</span><span class="meta"><span class="price">8,40 €</span><a href="https://www.planktonplus.de/salifert-profi-test-no2-nitrit/ZWT007" target="_blank" rel="noopener">PlanktonPlus</a><span class="tag">geprüft</span></span></span></label>
+    </div>
+
+    <div class="cat">
+      <div class="cat-title">Copepoden, Phyto, Putzer<span class="line"></span></div>
+      <label class="item" data-id="s23"><input type="checkbox" data-id="s23"><span class="body"><span class="label">Copepoden-Mix (Tigriopus), 750 ml, 3× im Abstand von 2 Wochen</span><span class="meta"><span class="price">3× 14,90 €</span><a href="https://www.aquacopa.de/zooplankton-copalife/copepoden-mix/" target="_blank" rel="noopener">Aquacopa</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s24"><input type="checkbox" data-id="s24"><span class="body"><span class="label">Apocyclops panamensis, 500 ml</span><span class="meta"><span class="price">19,90 €</span><a href="https://www.aquacopa.de/zooplankton-copalife/apocyclops-panamensis/" target="_blank" rel="noopener">Aquacopa</a><span class="tag offen">aktuell ausverkauft – Copepoden-Mix als Alternative</span></span></span></label>
+      <label class="item" data-id="s25"><input type="checkbox" data-id="s25"><span class="body"><span class="label">Easy Reefs EasyBooster nano, 250 ml</span><span class="meta"><span class="price">12,99 €</span><a href="https://www.planktonplus.de/easy-reefs-easybooster-nano-250-ml/ERBOONANO" target="_blank" rel="noopener">PlanktonPlus</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s26"><input type="checkbox" data-id="s26"><span class="body"><span class="label">Tisbe-Copepoden, reine Art, 0,5 l</span><span class="meta"><span class="price">15,00 € + Versand</span><a href="https://www.meerwassershop.de/Copepoden-Tisbe/SW40010.05" target="_blank" rel="noopener">meerwassershop.de</a><span class="tag">geprüft, sofort verfügbar</span></span></span></label>
+    </div>
+
+    <div class="cat">
+      <div class="cat-title">Aquascape &amp; Pflege<span class="line"></span></div>
+      <label class="item" data-id="s27"><input type="checkbox" data-id="s27"><span class="body"><span class="label">Orca-Kleber schwarz, 450 g</span><span class="meta"><span class="price">19,99 € + Versand</span><a href="https://www.olibetta.de/aquarium-muenster/orca-unterwasserkleber-schwarz" target="_blank" rel="noopener">Olibetta</a><span class="tag">geprüft</span></span></span></label>
+      <label class="item" data-id="s28"><input type="checkbox" data-id="s28"><span class="body"><span class="label">Nyos Coral Dip, 250 ml</span><span class="meta"><span class="price">19,95 €</span><a href="https://www.planktonplus.de/nyos-coral-dip-korallendip-250-ml/4665" target="_blank" rel="noopener">PlanktonPlus</a><span class="tag">geprüft, wenige Stück</span></span></span></label>
+      <label class="item" data-id="s29"><input type="checkbox" data-id="s29"><span class="body"><span class="label">Lugol'sche Lösung, 50 ml (Tropic Marin Pro-Coral Jod)</span><span class="meta"><span class="price">9,95 €</span><a href="https://www.zooprofi.de/tropic-marin-pro-coral-jod" target="_blank" rel="noopener">zooprofi.de</a><span class="tag">geprüft, 3 auf Lager</span></span></span></label>
+      <label class="item" data-id="s30"><input type="checkbox" data-id="s30"><span class="body"><span class="label">Seachem Ammonia Alert, 2×</span><span class="meta"><span class="price">–</span><span>nur US-Shops gefunden</span><span class="tag offen">offen, keine EU-Quelle</span></span></span></label>
+      <label class="item" data-id="s31"><input type="checkbox" data-id="s31"><span class="body"><span class="label">Zitronensäure Pulver, Lebensmittelqualität</span><span class="meta"><span class="price">ca. 8–28 € je nach Gebinde</span><a href="https://www.amazon.de/zitronens%C3%A4ure-pulver/s?k=zitronens%C3%A4ure+pulver" target="_blank" rel="noopener">amazon.de</a><span class="tag unsicher">Treffer, kein Einzelprodukt geprüft</span></span></span></label>
+      <label class="item" data-id="s32"><input type="checkbox" data-id="s32"><span class="body"><span class="label">Apogee MQ-510 PAR-Testgerät, 5 Werktage leihen</span><span class="meta"><span class="price">59,90 €</span><a href="https://meerwasser-hardware.de/products/apogee-par-quantummeter-mq-510-test-it-testger-t" target="_blank" rel="noopener">meerwasser-hardware.de</a><span class="tag offen">ausverkauft, anfragen</span></span></span></label>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-head"><h2>Hebel für einen günstigeren Einkauf</h2></div>
+    <ul>
+      <li><strong>Salz + Reagenzien in einer Bestellung bei reefdepot.de</strong> bündeln – Versand ohnehin ab 50 € frei, Salz bringt eine Gratis-ICP-Analyse mit.</li>
+      <li><strong>Fauna-Marin-Artikel (Balling Light, ICP, AquaHomeTest, Salifert) in einer PlanktonPlus-Bestellung</strong> bündeln. Code <code>BLACKREEFDEALS</code> (10 %, laut Instagram) – ob er auf bereits reduzierte Preise wirkt, zeigt erst der Warenkorb.</li>
+      <li><strong>dreamcorals.eu-Kleinteile (Schläuche, Spritzen-Bundle) nur bündeln</strong> – Versand 32 €, erst ab 349 € frei. Einzeln bestellen lohnt sich nicht.</li>
+      <li><strong>Black Week ab 27.11.2026:</strong> Whitecorals und PlanktonPlus haben Rabatte angekündigt. Da das Becken noch nicht geflutet ist, nichts akut eilig – größere Posten (Reagenzien, Balling Light, ICP) lohnt es, bis dahin zurückzuhalten.</li>
+    </ul>
+  </div>
+
+  <div class="foot">Stand 17.11.2026 · Quelle: aquarium-wissen-einkaufsliste-start.md</div>
+</div>
+<script src="app.js"></script>
+<script>initChecklist('einkauf');</script>
+</body>
+</html>
